@@ -1,0 +1,27 @@
+{
+  "name": "form.css",
+  "version": "1.0.0",
+  "description": "A classless css library to make awesome forms.",
+  "author": "maxam2017",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp watch"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-pxtorem": "^5.1.1",
+    "precss": "^4.0.0",
+    "prettier": "^2.0.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
