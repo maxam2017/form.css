@@ -1,0 +1,10 @@
+@mixin light-vars {
+  --primary-color: 51, 151, 207;
+  --default-text-color: 0, 0, 0;
+  --default-background-color: 255, 255, 255;
+}
+@mixin dark-vars {
+  --primary-color: 51, 151, 207;
+  --default-text-color: 255, 255, 255;
+  --default-background-color: 0, 0, 0;
+}

@@ -1,0 +1,28 @@
+@import "vars.scss";
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include light-vars();
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-vars();
+  }
+}
+
+body {
+  background-color: rgba(var(--default-background-color), 1);
+  color: rgba(var(--default-text-color), 0.92);
+  transition-property: background-color color;
+  transition-duration: 0.2s;
+}
+
+body[data-theme="light"] {
+  @include light-vars();
+}
+
+body[data-theme="dark"] {
+  @include dark-vars();
+}
