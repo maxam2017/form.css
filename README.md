@@ -50,6 +50,13 @@ We provide some css-variables to customize theme color.
 
 ### Components
 
+#### Normal Input
+
+- Ex.
+  ```html
+  <input />
+  ```
+
 #### Switch
 
 - material-ui style
