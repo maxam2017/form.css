@@ -56,30 +56,30 @@ input[type="checkbox"]:not([data-type="switch"]) {
 
 @keyframes checkbox-ripple {
   0% {
-    background-color: rgba(var(--default-text-color), 0.1);
+    background-color: rgba(var(--default-text-color), 0.25);
     transform: translate(-50%, -50%) scale(2.1);
   }
   50% {
-    background-color: rgba(var(--default-text-color), 0.1);
+    background-color: rgba(var(--default-text-color), 0.25);
     transform: translate(-50%, -50%) scale(2);
   }
   100% {
-    background-color: rgba(var(--default-text-color), 0.1);
+    background-color: rgba(var(--default-text-color), 0.25);
     transform: translate(-50%, -50%) scale(2.1);
   }
 }
 
 @keyframes checkbox-checked-ripple {
   0% {
-    background-color: rgba(var(--primary-color), 0.2);
+    background-color: rgba(var(--primary-color), 0.25);
     transform: translate(-50%, -50%) scale(2.1);
   }
   50% {
-    background-color: rgba(var(--primary-color), 0.2);
+    background-color: rgba(var(--primary-color), 0.25);
     transform: translate(-50%, -50%) scale(2);
   }
   100% {
-    background-color: rgba(var(--primary-color), 0.2);
+    background-color: rgba(var(--primary-color), 0.25);
     transform: translate(-50%, -50%) scale(2.1);
   }
 }

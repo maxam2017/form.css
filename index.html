@@ -11,6 +11,16 @@
     <h1>form.css ⚡️</h1>
     <form>
       <fieldset>
+        <legend>Input</legend>
+        <label for="email">Email ✉️</label>
+        <input type="email" id="email" placeholder="example@smtp.example.com" size="26" />
+        &nbsp; &nbsp; &nbsp;
+        <label for="dob">Date of Birth 🎂</label>
+        <!-- For Safari Desktop, the native date picker is not supported. -->
+        <input type="date" id="dob" />
+      </fieldset>
+      <br />
+      <fieldset>
         <legend>Switch</legend>
         <input type="checkbox" data-type="switch" id="nothing" />
         <label for="nothing">This is a switch 👈</label>
@@ -28,8 +38,8 @@
   </body>
 </html>
 <script>
+  const isDark = !!window.matchMedia("(prefers-color-scheme: dark)").matches;
   window.onload = function () {
-    const isDark = !!window.matchMedia("(prefers-color-scheme: dark)").matches;
     const inputElement = document.querySelector("#dark-mode");
     inputElement.checked = isDark;
   };
@@ -37,7 +47,7 @@
   function toggle() {
     const theme = document.body.getAttribute("data-theme");
     if (!theme) {
-      document.body.setAttribute("data-theme", "light");
+      document.body.setAttribute("data-theme", isDark ? "light" : "dark");
     } else {
       document.body.setAttribute("data-theme", theme === "light" ? "dark" : "light");
     }

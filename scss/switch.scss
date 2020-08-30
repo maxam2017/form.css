@@ -71,24 +71,24 @@ input[type="checkbox"][data-type="switch"] {
 
 @keyframes ripple {
   0% {
-    box-shadow: rgba(var(--default-text-color), 0.1) 0px 0px 0px 5px;
+    box-shadow: rgba(var(--default-text-color), 0.2) 0px 0px 0px 5px;
   }
   50% {
-    box-shadow: rgba(var(--default-text-color), 0.1) 0px 0px 0px 6px;
+    box-shadow: rgba(var(--default-text-color), 0.2) 0px 0px 0px 6px;
   }
   100% {
-    box-shadow: rgba(var(--default-text-color), 0.1) 0px 0px 0px 5px;
+    box-shadow: rgba(var(--default-text-color), 0.2) 0px 0px 0px 5px;
   }
 }
 
 @keyframes checked-ripple {
   0% {
-    box-shadow: rgba(var(--primary-color), 0.2) 0px 0px 0px 5px;
+    box-shadow: rgba(var(--primary-color), 0.25) 0px 0px 0px 5px;
   }
   50% {
-    box-shadow: rgba(var(--primary-color), 0.2) 0px 0px 0px 6px;
+    box-shadow: rgba(var(--primary-color), 0.25) 0px 0px 0px 6px;
   }
   100% {
-    box-shadow: rgba(var(--primary-color), 0.2) 0px 0px 0px 5px;
+    box-shadow: rgba(var(--primary-color), 0.25) 0px 0px 0px 5px;
   }
 }
