@@ -25,6 +25,8 @@ A CSS library for form fields. It's simple and **classless**.
 
 ### Theme
 
+#### Scheme
+
 - Support two common color scheme: `light` and `dark`.
 - By default, we use [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
 - Simply put attribute `data-theme` on `<body/>` for override default theme.
@@ -33,6 +35,18 @@ A CSS library for form fields. It's simple and **classless**.
     ```html
     <body data-theme="dark"></body>
     ```
+
+#### Customize your own theme
+
+We provide some css-variables to customize theme color.
+
+|         css-variable         | default value(light) | default value(dark) |
+| :--------------------------: | :------------------: | :-----------------: |
+|      `--primary-color`       |    `51, 151, 207`    |   `51, 151, 207`    |
+|    `--default-text-color`    |      `0, 0, 0`       |   `255, 255, 255`   |
+| `--default-background-color` |   `255, 255, 255`    |      `0, 0, 0`      |
+
+> For easily modify theme color without compiling by sass processor, we only put `r,b,a` parameters into css-variable
 
 ### Components
 
@@ -43,6 +57,14 @@ A CSS library for form fields. It's simple and **classless**.
 - Ex.
   ```html
   <input type="checkbox" data-type="switch" />
+  ```
+
+#### Checkbox
+
+- material-ui style
+- Ex.
+  ```html
+  <input type="checkbox" />
   ```
 
 ## License
