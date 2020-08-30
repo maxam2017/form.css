@@ -6,6 +6,7 @@ input[type="checkbox"][data-type="switch"] {
   /* HACK: support pseudo element in input element for Firefox */
   -moz-appearance: initial;
   outline: none;
+  border: none;
   position: relative;
   display: inline-block;
   height: 14px;
@@ -66,13 +67,6 @@ input[type="checkbox"][data-type="switch"] {
       animation-name: checked-ripple;
     }
   }
-}
-
-label {
-  user-select: none;
-  cursor: pointer;
-  height: 1em;
-  -webkit-tap-highlight-color: transparent;
 }
 
 @keyframes ripple {
