@@ -1,4 +1,5 @@
 @import "theme.scss";
+@import "format.scss";
 @import "input.scss";
 @import "switch.scss";
 @import "checkbox.scss";
@@ -6,6 +7,5 @@
 label {
   user-select: none;
   cursor: pointer;
-  height: 1em;
   -webkit-tap-highlight-color: transparent;
 }

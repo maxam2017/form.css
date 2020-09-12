@@ -9,15 +9,24 @@ input[type="tel"],
 input[type="text"],
 input[type="time"],
 input[type="week"] {
+  /* HACK: support pseudo element in input element for Firefox */
+  -moz-appearance: initial;
   outline: none;
   padding: 2px 6px;
   height: 22px;
   border-radius: 4px;
   background: transparent;
-  border: 1.4px solid rgba(var(--default-text-color), 0.6);
-  transition: border-color 0.2s ease-in-out;
+  border: 1.4px solid rgba(var(--default-text-color), 0.5);
+  transition-duration: 0.3s;
+  transition-property: border-color box-shadow;
+  transition-timing-function: ease-in-out;
   color: rgba(var(--default-text-color), 0.9);
 
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(var(--primary-color), 0.2);
+  }
+
+  &:hover,
   &:focus {
     border-color: rgba(var(--primary-color), 1);
   }

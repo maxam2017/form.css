@@ -25,8 +25,8 @@ input[type="checkbox"]:not([data-type="switch"]) {
       background-color: transparent;
       width: 10px;
       height: 4px;
-      border-left: 1.5px solid rgba(var(--default-background-color), 1);
-      border-bottom: 1.5px solid rgba(var(--default-background-color), 1);
+      border-left: 2px solid rgba(var(--default-background-color), 1);
+      border-bottom: 2px solid rgba(var(--default-background-color), 1);
     }
   }
 

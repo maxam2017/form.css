@@ -9,30 +9,36 @@
 
   <body>
     <h1>form.css ⚡️</h1>
-    <form>
+    <form data-format="enable">
       <fieldset>
         <legend>Input</legend>
-        <label for="email">Email ✉️</label>
-        <input type="email" id="email" placeholder="example@smtp.example.com" size="26" />
-        &nbsp;
-        <label for="dob">Date of Birth 🎂</label>
-        <!-- For Safari Desktop, the native date picker is not supported. -->
-        <input type="date" id="dob" />
+        <div>
+          <label for="email">Email ✉️</label>
+          <input type="email" id="email" placeholder="example@smtp.example.com" size="26" />
+        </div>
+        <div>
+          <label for="dob">Date of Birth 🎂</label>
+          <!-- For Safari Desktop, the native date picker is not supported. -->
+          <input type="date" id="dob" />
+        </div>
       </fieldset>
-      <br />
       <fieldset>
         <legend>Switch</legend>
-        <input type="checkbox" data-type="switch" id="nothing" />
-        <label for="nothing">This is a switch 👈</label>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="checkbox" data-type="switch" id="dark-mode" onchange="toggle()" />
-        <label for="dark-mode">Dark mode🌛</label>
+        <div>
+          <input type="checkbox" data-type="switch" id="nothing" />
+          <label for="nothing">This is a switch 👈</label>
+        </div>
+        <div>
+          <input type="checkbox" data-type="switch" id="dark-mode" onchange="toggle()" />
+          <label for="dark-mode">Dark mode🌛</label>
+        </div>
       </fieldset>
-      <br />
       <fieldset>
         <legend>Checkbox</legend>
-        <input type="checkbox" id="agreement" />
-        <label for="agreement">I agree 👌</label>
+        <div>
+          <input type="checkbox" id="agreement" />
+          <label for="agreement">I agree 👌</label>
+        </div>
       </fieldset>
     </form>
   </body>
