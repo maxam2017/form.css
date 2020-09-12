@@ -40,10 +40,10 @@ A CSS library for form fields. It's simple and **classless**.
 
 We provide some css-variables to customize theme color.
 
-|         css-variable         | default value(light) | default value(dark) |
-| :--------------------------: | :------------------: | :-----------------: |
-|      `--primary-color`       |    `51, 151, 207`    |   `51, 151, 207`    |
-|    `--default-text-color`    |      `0, 0, 0`       |   `255, 255, 255`   |
+| css-variable                 | default value(light) | default value(dark) |
+| ---------------------------- | :------------------: | :-----------------: |
+| `--primary-color`            |    `51, 151, 207`    |   `51, 151, 207`    |
+| `--default-text-color`       |      `0, 0, 0`       |   `255, 255, 255`   |
 | `--default-background-color` |   `255, 255, 255`    |      `0, 0, 0`      |
 
 > For easily modify theme color without compiling by sass processor, we only put `r,b,a` parameters into css-variable
