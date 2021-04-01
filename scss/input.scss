@@ -1,3 +1,4 @@
+input:not([type="checkbox"]),
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
@@ -12,7 +13,7 @@ input[type="week"] {
   /* HACK: support pseudo element in input element for Firefox */
   -moz-appearance: initial;
   outline: none;
-  padding: 2px 6px;
+  padding: 4px 8px;
   height: 22px;
   border-radius: 4px;
   background: transparent;
@@ -21,6 +22,7 @@ input[type="week"] {
   transition-property: border-color box-shadow;
   transition-timing-function: ease-in-out;
   color: rgba(var(--default-text-color), 0.9);
+  font-size: 16px;
 
   &:focus {
     box-shadow: 0 0 0 2px rgba(var(--primary-color), 0.2);
@@ -38,6 +40,11 @@ input::-webkit-calendar-picker-indicator {
   @media (prefers-color-scheme: dark) {
     filter: invert(0.9);
   }
+}
+
+input::-webkit-datetime-edit {
+  font-size: 1em;
+  font-family: var(--font-family) sans-serif;
 }
 
 body[data-theme="light"] {

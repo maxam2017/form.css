@@ -1,5 +1,10 @@
 @import "vars.scss";
 
+// global css variable
+:root {
+  --font-family: "PingFang TC";
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     @include light-vars();
